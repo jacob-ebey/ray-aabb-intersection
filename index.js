@@ -6,7 +6,7 @@ function intersection (out, ro, rd, aabb) {
   if (d === Infinity) {
     out = null
   } else {
-    out = out || new Float32Array(3)
+    out = out || new Float32Array(ro.length)
     for (var i = 0; i < ro.length; i++) {
       out[i] = ro[i] + rd[i] * d
     }
